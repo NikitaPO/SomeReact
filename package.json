@@ -1,0 +1,19 @@
+{
+  "name": "somereact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaPO/SomeReact.git"
+  },
+  "author": "Nikita Popov <gigzim345@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikitaPO/SomeReact/issues"
+  },
+  "homepage": "https://github.com/NikitaPO/SomeReact#readme"
+}
