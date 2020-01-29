@@ -29,6 +29,7 @@
           <Car name="Audi" year="2016" />
           <Car name="Mazda" year="2013" />
           <Car name="BMW" year="2014" />
+          <Button text="Click me!" />
         </div>
       );
 
@@ -40,6 +41,19 @@
               Year: <strong>{props.year}</strong>
             </p>
           </div>
+        );
+      }
+
+      async function click() {
+        let { app } = await import("./index.js");
+        app();
+      }
+
+      function Button({ text }) {
+        return (
+          <button className="button" onClick={click}>
+            {text}
+          </button>
         );
       }
 
@@ -58,5 +72,6 @@
       You can also use React without JSX, in which case you can remove Babel:
       https://reactjs.org/docs/react-without-jsx.html
     -->
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
